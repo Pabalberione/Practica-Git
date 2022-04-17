@@ -1,0 +1,43 @@
+<script>
+
+    //Objetos para Busquedas
+    function buscarElementoQuimico(simbolo){
+        
+        var simbolosQuimicos={
+            "Al": "Aluminio",
+            "S": "Azufre",
+            "Cl": "Cloro",
+            "He": "Helio",
+            "B": "Boro",
+            "Li": "Litio"
+        };
+
+        return simbolosQuimicos[simbolo];
+    }
+
+    console.log(buscarElementoQuimico("Al"));
+    console.log(buscarElementoQuimico("S"));
+    console.log(buscarElementoQuimico("Cl"));
+    console.log(buscarElementoQuimico("He"));
+    console.log(buscarElementoQuimico("B"));
+    console.log(buscarElementoQuimico("Li"));
+
+    //Verificar si el objeto tiene Propiedades
+    var miCuaderno={
+        "color": "verde",
+        "categoria":3,
+        "precio": 4.56
+    }
+    console.log(miCuaderno.hasOwnProperty("color"));
+    console.log(miCuaderno.hasOwnProperty("origen"));
+
+    //Funcion para verificar si el objeto tiene cierta propiedad
+    function verificarPropiedad(obj,propiedad){
+        if(obj.hasOwnProperty(propiedad)==true){
+            return "El objeto SI tiene la propiedad "+propiedad+" y el valor de la misma es: "+obj[propiedad];
+        } else{
+            return "El objeto NO tiene la propiedad "+propiedad;
+        }
+    }
+    console.log(verificarPropiedad(miCuaderno,"color"));
+</script>

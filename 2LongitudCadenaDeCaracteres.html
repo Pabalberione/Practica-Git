@@ -1,0 +1,71 @@
+<script>
+    //Cuantos caracteres contiene la cadena
+    var miCadena;
+    miCadena="A B";
+    console.log(miCadena.length);//.lenght sirve para contar los caracteres
+
+    var miCadena2;
+    miCadena2="JavasCript!";//Cualquier simbolo cuenta como caracter
+    console.log(miCadena2.length);
+
+    //Notacionde corchetes: Primer Caracter
+    /*Nos permite acceder a los caracteres individuales de cada cadena*/
+    var lenguajeDeProgramacion= "Javascript"
+    /*
+    Cadena:   J a v a S c r i p t
+    Indices:  0 1 2 3 4 5 6 7 8 9
+    */
+    console.log(lenguajeDeProgramacion[0]);
+    console.log(lenguajeDeProgramacion[4]);
+    console.log(lenguajeDeProgramacion[9]);
+
+    //Inmutabilidad de Cadenas de Caracteres
+    var miCadena3="Jola, Mundo";
+    console.log(miCadena3);
+    miCadena3[0]="H";//Error, porque no se pueden cambiar los caracteres individuales de la cadena
+    miCadena3="Hola, Mundo";
+    console.log(miCadena3);
+
+    //Notacion de corchetes: Enésimo caracter
+    var miCadena4="Programar";
+    /*
+    Cadena:    P r o g r a m a r
+    Indice:    1 2 3 4 5 6 7 8 9
+    */
+    console.log(miCadena4[0]);
+    console.log(miCadena4[1]);
+    console.log(miCadena4[2]);
+    console.log(miCadena4[3]);
+    console.log(miCadena4[4]);
+    console.log(miCadena4[5]);
+    console.log(miCadena4[6]);
+    console.log(miCadena4[7]);
+    console.log(miCadena4[8]);
+
+    //Notacion de corchetes: Ultimo caracter
+    var miCadena5;
+    miCadena5="Python";
+    /*
+    El ultimo indice siempre es longitud -1 porque comenzamos a contar
+    desde 0.
+    miCadena.length para "Python"es 6.
+    */
+   console.log(miCadena5[miCadena5.length-1]);
+
+    //Notacion de Corchetes: De Derecha a Izquierda
+    var miCadena6;
+    miCadena6="JavasCript"
+    /*
+    El penultimo indice es longitud-2
+    MiCadena.length es 10. El penúltimo índice es 8.
+    */
+    console.log(miCadena6[miCadena6.length-2]);
+
+    var miCadena7;
+    miCadena7="Python"
+    n=4
+    console.log(miCadena7[miCadena7.length-n]);
+
+    //Palabras en blanco
+    
+</script>

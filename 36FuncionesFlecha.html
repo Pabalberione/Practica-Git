@@ -1,0 +1,29 @@
+<script>
+    //Tipo mas compacto de funciones que se utilizan para definir funciones anonimas
+    //Son muy utiles cuando queremos pasar funciones como argumentos de otrs funciones
+    const fecha=()=>new Date();
+    
+    //Agregar parametros a las funciones flecha
+    const sumarTres=(x)=>x + 3;
+    console.log(sumarTres(3));
+
+    //Definir funcion flecha con 2 parametros
+    const concatenar = (arr1, arr2)=> arr1.concat(arr2);
+    console.log(concatenar([1,2,3],[4,5,6]));
+
+    //Definir funcion flecha con variables personalizadas
+    const sumar=(a,b)=>{
+        let num=6;
+        return a+b+num;
+    }
+    console.log(sumar(1,4));
+
+    //Valores por defecto para parametros de funcion flecha
+    //Cuando queremos permitir que el usuario omita algun argumento para usar el valor por defecto
+    const incrementar=(num,valor=1)=>num+valor;
+    console.log(incrementar(5))
+    console.log(incrementar(5,3));
+
+    //
+
+</script>

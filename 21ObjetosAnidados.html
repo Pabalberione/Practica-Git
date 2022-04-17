@@ -1,0 +1,34 @@
+<script>
+    var miReceta= {
+        "descripcion":"mi postre favorito",
+        "costo":15.6,
+        "ingredientes":{
+            "masa":{
+                "harina": "100 grs",
+                "sal": "1 cucharadita",
+                "agua": "1 taza"
+            },
+            "cobertura":{
+                "azucar":"120grs",
+                "chocolate":"4 cucharadas",
+                "mantequilla":"200 grs"
+            }
+
+        },
+    };
+    //Notacion de punto para ver la información del valor 
+    console.log("Se necesitan: "+miReceta.ingredientes.masa.harina+" de harina.");
+    console.log("Se necesita: "+miReceta.ingredientes.masa.sal+" de sal");
+    console.log("Se necesitan "+miReceta.ingredientes.masa.agua+" de agua");
+    console.log("Se necesitan: "+miReceta.ingredientes.cobertura.azucar+" de azucar para hacer la cobertura");
+    console.log("Se necesitan: "+miReceta.ingredientes.cobertura.chocolate+" de chocolate para hacer la cobertura");
+    console.log("Se necesitan: "+miReceta.ingredientes.cobertura.mantequilla+" de mantequilla para hacer la cobertura");
+    //Notacion de corchetes para ver la información del valor
+    /*Ventaja: Se puede escribir una variable asi que se pueden personalizar
+    los valores que accedemos*/
+    console.log("Se necesitan: "+miReceta.ingredientes.masa["harina"]+" de harina.");
+    console.log("Se necesita: "+miReceta.ingredientes.masa["sal"]+" de sal");
+    console.log("Se necesitan "+miReceta.ingredientes.masa["agua"]+" de agua");
+
+
+</script>

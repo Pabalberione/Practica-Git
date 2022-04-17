@@ -1,0 +1,39 @@
+<script>
+    //Numeros Decimales
+    function generarFraccionAleatoria(){
+        return Math.random();
+    }
+    console.log(generarFraccionAleatoria());
+    console.log(generarFraccionAleatoria());
+    console.log(generarFraccionAleatoria());
+    console.log(generarFraccionAleatoria());
+    console.log(generarFraccionAleatoria());
+    console.log(generarFraccionAleatoria());
+    console.log(generarFraccionAleatoria());
+
+    //Numeros Enteros
+    //Expresion que nos permite convertir los numeros decimales en numeros enteros
+    var numeroAleatorioEntre0y19 = Math.floor(Math.random() * 20);//Retorna el mayor numero entero que es menor o igual que el numero pasado entre los parentesis
+    console.log(numeroAleatorioEntre0y19);
+
+    //Numero entero aleatorio
+    function generarEnteroAleatorio(limiteSuperior){
+        return Math.floor(Math.random()* limiteSuperior)
+    }
+    console.log(generarEnteroAleatorio(50));
+    
+    for(var i=0;i<15;i++){
+        console.log(generarEnteroAleatorio(13));
+    }
+
+    //Numeros enteros aleatorios en un rango
+    function rangoAleatorio(limiteInferior, limiteSuperior){
+        return Math.floor(Math.random()*(limiteSuperior-limiteInferior+1))+limiteInferior;
+    }
+    console.log("**Numeros aleatorios entre 12 y 72**")
+    for(var i=0;i<22;i++){
+        console.log(rangoAleatorio(12,72));
+    }
+
+    
+</script>

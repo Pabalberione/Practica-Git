@@ -1,0 +1,29 @@
+<script>
+    var i=0
+    while(i<=3){
+        console.log("Hola Mundo");
+        i++;
+    }
+
+    //Agregar elementos al arreglo
+    var miArreglo=[];
+    var i2=0;//Se tiene que declarar la variable para que se pueda sumar en el while
+    console.log(miArreglo);
+
+    while(i2<10){
+        miArreglo.push(i2);
+        i2++;
+    }
+    console.log(miArreglo);
+
+    //Eliminar numeros de un arreglo
+    /*
+    El ciclo dice que cuando la longitud del arreglo sea mayor
+    a 4 se elimine el ultimo elemento del arreglo.
+    */
+    var numeros=[2, 3, 4, 5, 6, 8, 9, 34];
+    while(numeros.length>4){
+        numeros.pop()
+    }
+    console.log(numeros);
+</script>

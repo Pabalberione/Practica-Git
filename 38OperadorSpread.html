@@ -1,0 +1,21 @@
+<script>
+    //Hace lo contrario que el operador rest
+    /*
+    Este operador descompone su arreglo asignado para que la funcion
+    utilice cada uno de los valores para el parametro por separado
+    */
+
+   const numeros=[1,2,3];
+
+   function sumar(x,y,z){
+       return x+y+z;
+   }
+   /*Ahora con el operador SPREAD voy a separar el arreglo
+   declarado en la const numeros y lo voy a usar en el ordenque está
+   declarado para asignarselo a cada uno de los parametros de la funcion.
+   El parámetro SPREAD se ve como los tres puntos antes de poner los parametros
+   de la funcion
+   */
+   console.log(sumar(...numeros));
+
+</script>

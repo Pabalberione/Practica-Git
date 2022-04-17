@@ -1,0 +1,44 @@
+<script>
+    /*Este codigo es fundamental para aprender a trabajar
+    con la notación que se usa en el desarrollo web. 
+    Indica que estamos trabajando con OBJETOS dentro de un
+    ARREGLO*/
+    var ordenesDePizzas=[ //Los corchetes indican que estamos trabajando inicialmente con un arreglo
+        { //Llave que indica el inicio de la declaracion de un objeto
+            "tipo": "margarita",
+            "tamaño": "individual",
+            "precio": 5.67,
+            "toppings": [//Se trabajan los toppings como un arreglo
+                "extra queso",
+                "champiñones",
+                "piña"
+            ],
+            "paraLlevar": true
+        },
+        {//Llave que indica el inicio de la declaracion de un objeto
+            "tipo": "cuatro quesos",
+            "tamaño": "familiar",
+            "precio": 18.34,
+            "toppings": [
+                "extra queso",
+                "pimentón"
+            ],
+            "paraLlevar": false
+        },
+        {
+            "tipo": "napolitana",
+            "tamaño": "individual",
+            "precio": 6.78,
+            "toppings": [],
+            "paraLlevar": true
+        }
+    ];
+
+    console.log(ordenesDePizzas[2].tipo);
+    console.log(ordenesDePizzas[2]["tipo"]);//Las dos maneras muestran lo mismo
+
+
+
+
+
+</script>

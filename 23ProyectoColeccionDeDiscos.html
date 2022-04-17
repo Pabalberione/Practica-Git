@@ -1,0 +1,66 @@
+<script>
+    /*
+    Tenemos un objeto que representa parte de una colleccion
+    de albumes musicales.
+
+    Cada album tiene un numero de identificacion unico (id)
+    asociado a otras propiedades
+
+    No todos los albumes tienen la informacion completa
+    */
+
+   var coleccionDeDiscos = {
+       7853:{
+           tituloDelAlbum: "Bee Gees Greatest",
+           artista: "Bee Gees",
+           canciones:["Stayin' Alive"]
+       },
+       5439:{
+           tituloDelAlbum:"ABBA Gold"
+       }
+   };
+
+   /*
+   Define una función actualizarDiscos que tome los siuientes parámetros:
+   -discos
+   -id.
+   -propiedad("artista" o "cancion")
+   -valor
+
+   Tu meta es completar la función implementando las siguientes reglas
+   para modificar el objeto pasado a la función:
+
+   - Si "valor" es una cadena vacía, elimina la propiedad del
+   album correspondiente.
+
+   - Si "propiedad" es igual a la cadena de caracteres "canciones" pero
+   el album no tiene una propiedad llamada "canciones", crea un arreglo
+   vacío y agrega "valor" a ese arreglo.
+
+   -Si "propiedad" es igual a la cadena de caracteres "canciones" y 
+   "valor" no es una cadena vacia, agrega "valor" al final del arreglo d
+   de canciones del album correspondiente
+
+   -Si "valor" no es una cadena vacia y "propiedad" no es igual a 
+   "canciones", asigna el valor del parámetro "valor" a la propiedad.
+   Si la propiedad no existe, debes crearla y asignar ese valor
+   */
+
+  function actualizarDiscos(discos, id, propiedad, valor){
+    if(valor===""){
+        delete discos[id][propiedad];
+    } else if(propiedad==="canciones" /*&& discos[id].hasOwnProperty("canciones")==false*/){
+        discos[id][propiedad]=discos[id][propiedad]||[];//Esta sentencia indica que si la propiedad "canciones" existe se va a mantener intacta la lista de canciones
+        //pero si propiedad.canciones=undefined entonces se va a crear un arreglo vacio al ultimo de la propiedad
+        discos[id][propiedad].push(valor);//Se agrega el valor "valor" al arreglo vacio
+    } else{
+        discos[id][propiedad]=valor;
+    }
+  }
+
+  console.log(coleccionDeDiscos[7853].tituloDelAlbum);
+  actualizarDiscos(coleccionDeDiscos,7853,"tituloDelAlbum","");
+  console.log(coleccionDeDiscos.tituloDelAlbum);
+
+
+</script>

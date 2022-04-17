@@ -1,0 +1,81 @@
+<script>
+    var miPerro= {
+        "nombre": "Gino",
+        "edad": 5,
+        "peso": 6,
+        "raza": "Beagle"
+    };
+
+    //Acceder a Propiedades: Notación de Punto
+    var miPerro= {
+        "nombre": "Gino",
+        "edad": 5,
+        "peso": 6,
+        "raza": "Beagle"
+    };
+
+    console.log(miPerro.nombre); //Esta notacion permite acceder a la propiedad nombre del objeto Perro
+    console.log(miPerro.edad);
+
+    //Acceder a Propiedades: Notación de Corchetes
+    var miCuaderno={
+        "color": "verde",
+        "categoria": 3,
+        "numero de paginas": 200,
+        "numerode hojas":100
+    };
+
+    console.log(miCuaderno["color"]);//Esta notación permite acceder a las propiedades que tienen espacios en su nombre
+    console.log(miCuaderno["numero de paginas"]);
+
+    //Acceder a Propiedades: Variables
+    var resultados = {
+        1: "nora256",
+        2: "gino577",
+        3: "estef543",
+        4: "kiara566",
+    };
+    var posicion=4;
+    console.log(resultados[posicion]);
+
+    //Actualizar propiedades de un objeto
+    var mochila={
+        "color": "azul",
+        "tamaño": "mediano",
+        "contenido": ["botella de agua", "cuaderno"]
+    }
+
+    console.log(mochila.color);//azul
+    mochila.color="verde";//Se cambia el valor a verde
+    console.log(mochila.color);
+
+    console.log(mochila.contenido);
+    mochila.contenido.push("lápiz");//Se agrega un lapiz al contenido de la mochila con push()
+    console.log(mochila.contenido);
+    //mochila.contenido=[]; Se reasigna el contenido de mochila ingresando los valores entre los corchetes
+
+    //Agregar propiedades
+    var curso= {
+        "titulo":"Aprende Javascritp desde Cero",
+        "idioma": "Español",
+        "duracion":30
+        };
+
+    console.log(curso.vistas);
+    curso.vistas=34555;//Se crea una nueva propiedad para el objeto
+    console.log(curso.vistas);
+
+    console.log(curso.profe);
+    curso["profe"]="Jose";
+    console.log(curso.profe);
+
+    //Eliminar propiedades
+    var curso2= {
+        "titulo":"Aprende Javascritp desde Cero",
+        "idioma": "Español",
+        "duracion":30
+        };
+    console.log(curso2.duracion);
+    delete curso2.duracion;
+    console.log(curso2);
+</script>

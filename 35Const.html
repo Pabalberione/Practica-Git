@@ -1,0 +1,41 @@
+<script>
+    //Variables que solo pueden ser usadas con el valor que se les definió
+    const MI_CONSTANTE=35;
+    console.log(MI_CONSTANTE);
+
+   // MI_CONSTANTE=43;//Error, no se puede modificar el valor de la constante
+
+    function calcularAreaCirculo(radio){
+        const PI=3.14;
+
+        if(radio<0){
+            return undefined;
+        }
+        return PI*(radio**2);
+    }
+
+    console.log(calcularAreaCirculo(10));
+
+    //Mutar arreglo declarado con const
+    const MI_ARREGLO= [1, 2, 3, 4];
+    MI_ARREGLO[0]=5;
+    MI_ARREGLO[1]=6;
+    MI_ARREGLO[2]=7;
+    MI_ARREGLO[3]=8;
+
+    console.log(MI_ARREGLO);
+
+    //Crear objeto inmutable
+    let colores={
+        "verde":"#10e04b",
+        "azul":"#1b50e0",
+        "negro":"#000000",
+        "blanco":"#ffffff"
+    };
+
+    Object.freeze(colores);
+
+    colores.verde="fdafd32";//no se puede
+    console.log(colores);
+
+</script>

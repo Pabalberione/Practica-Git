@@ -1,0 +1,44 @@
+<script>
+    /*
+    Próximo en la Fila
+    En informática una cola (queue) es una estructura de datos abstracta
+    en la cual los elementos se mantienen en orden. Los nuevos elementos se pueden
+    añadir al final de la cola y los elementos previos se retiran del principio de la cola.
+
+    Define una funcion proximoEnLaFila que tome un arreglo(arreglo) y un numero(elemento)
+    como argumentos. Agrega el numero al final del arreglo y luego elimina el primer
+    elemento del arreglo. La funcion proximoEnLaFila debe retornar el elemento
+    que fue removido
+    */
+
+    //Altermativa con return y un solo parámetro
+    var miArreglo=["Jose", "Enrique", "Samuel", "Pedro"];
+    function proximoEnLaFila(nuevoValor){
+        
+        miArreglo.push(nuevoValor);
+        miArreglo.shift();
+        return miArreglo;
+    }
+    console.log(proximoEnLaFila("Andres"));
+
+    //Alternativa sin return y 2 parámetros
+    function proximoEnLaFila2(arr,elem){
+        arreglo.push(elem);
+        arreglo.shift(); //Remover el primer elemento
+        console.log(arreglo);
+    }
+    var arreglo=["Jose", "Enrique", "Samuel", "Pedro"];
+    proximoEnLaFila2(arreglo,"Andres");
+
+    //Alternativa devolviendo el elemento que fué removido
+    function proximoEnLaFila3(arr,elem){
+        arreglo.push(elem);
+        elemRemov=arreglo.shift(); //Remover el primer elemento
+        return elemRemov;//Mas facil: return arreglo.shift();
+    }
+    var arreglo=["Jose", "Enrique", "Samuel", "Pedro"];
+    console.log("Antes: "+JSON.stringify(arreglo));//Esta funcion JSON permite visualizar mejor el arreglo
+    console.log(proximoEnLaFila3(arreglo,"Andres"));
+    console.log("Despues:"+JSON.stringify(arreglo));
+
+</script>

@@ -1,0 +1,56 @@
+<script>
+    var nombre="lñsajlk789fsa";
+    var apelido='Turing';
+    
+    
+    //Escapar comillas entre cadena de caracteres
+    //Se utiliza un caracter para escarpar de adentro de las comillas
+    var miCadena="Soy una cadena de caracteres \"con comillas\"";
+    console.log(miCadena);
+
+    //Cadena de caracteres con comillas simples
+    /*
+      Para ingresar comillas dobles en un texto tambien se puede declarar la 
+      variable con comillas simples y el texto que se necesite mostrar en comillas
+      dobles colocarlo tal cual. Se puede realizar de manera inversa declarando la
+      variable con comillas dobles y dentro del texto ingresar la palabra o conjunto
+      de palabras con comillas simples
+    */
+    var miMeta;
+    miMeta='Aprender a "programar"';
+    console.log(miMeta);
+
+    //Secuencias de Escape
+    /*
+    Combinacion de caracteres que no se representan a si mismos en una cadena de 
+    caracteres
+    \'  Comilla Simple
+    \"  Comilla Doble
+    \\  Barra invertida
+    \n  Línea Nueva
+    \r  Retorno de Carro
+    \t  Tabulación
+    \b  Retroceso
+    \f  Salto de Página
+    */
+
+   console.log("Estoy aprendiendo \"Javascript\"");
+   console.log("Estoy aprendiendo \\ Javascript");
+   console.log("Estoy aprendiendo: \nJavascript");
+
+   //Concatenar cadenas de caracteres
+   var nombreCompleto="Alan " +"Turing";//Tambien se puede concatenar el espacio " "
+   console.log(nombreCompleto);
+
+   //Construir cadenas con variables
+   var verbo="Programar";
+   var mensaje= "Estoy aprendiendo a "+verbo+" con FreeCodeCamp";
+   console.log(mensaje);
+
+   //Agregar variables a Cadenas de Caracteres
+   var mensajeCompleto="Estoy aprendiendo a programar ";
+   var parteFinal="con FreeCodeCamp";
+   console.log(mensajeCompleto);
+   mensajeCompleto+=parteFinal;
+   console.log(mensajeCompleto);
+</script>

@@ -1,0 +1,34 @@
+<script>
+    function sumar(a,b){
+        return a+b;
+    }
+    console.log(sumar(5,3));
+    /*
+    Solo se mostrará lo que devuelve el return si se muestra a traves de un
+    console.log fuera de la funcion.
+    */
+
+    //Undefined
+    //Podemos no retornar ningun valor pero este seria Undefined
+    function sumar2(a,b){
+        console.log(a+b);
+    }
+    console.log(sumar2(5,3));
+
+    //Asignar un valor retornado a una variable
+    function sumar3(a,b){
+        return a+b;
+    }
+
+    var resultado = sumar(5,3);//Asignamos el resultado a una variable
+    console.log(resultado);
+
+    function crearCadenaConMeta(lenguajeDeProgramacion){
+        return "Mi meta es aprender"+lenguajeDeProgramacion;
+    }
+    var miMeta=crearCadenaConMeta("Javascript");//Asignamos el resultado a la variable
+    console.log(miMeta);
+
+    //Permanece en fila
+
+</script>

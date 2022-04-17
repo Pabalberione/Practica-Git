@@ -1,0 +1,16 @@
+<script>
+    //Permite pasar cualquier numero de argumentos a una funcion
+    //y que esos argumentos se tomen como un arreglo
+    function miFuncion(...args){
+        console.log(args);
+    };
+
+    miFuncion(1,2,3,4);
+    miFuncion([1,2,3],[4,5,6]);
+
+    //Extender funcionalidad para pasar mas argumentos
+    const sumar= (...args)=>{
+        return args.reduce((a,b)=>a+b,0);
+    };
+
+</script>

@@ -1,0 +1,46 @@
+<script>
+    //Ejemplo 1
+    var x = 5;
+    if(x>2 && x<10){
+        console.log("La condicion es verdadera");
+    }
+
+    //Ejemplo 2
+    var estacion="Invierno";
+    if(estacion=="Invierno"){
+        console.log("Hace mucho frio.");
+    }
+
+    //Clausula ELSE
+    if(false){
+        console.log("La condicion es verdadera");
+    } else{
+        console.log("La condicion es falsa");//Clausula: Parte de una estructura que podemos usar en el códig
+    }
+
+    //Ejemplo 3
+    var estacion="Invierno";
+    if(estacion=="Verano"){
+        console.log("Comenzo el verano, ya podemos ir a la playa");
+    } else{
+        console.log("Ya quiero que lleue el verano para poder ir a la playa");
+    }
+
+    //Clausula ELSE IF
+    function clasificarValor(valor){
+        if(valor%3==0&&valor%2==0){
+            console.log("Valor divisible por 2 y por 3");
+        } else if(valor%2==0){
+            console.log("Divisible por 2.");
+        } else if(valor%3==0){
+            console.log("Divisible por 3");
+        }
+        else {
+            console.log("No es divisible entre las opciones");
+        }
+    }
+
+    clasificarValor(18);
+
+
+</script>

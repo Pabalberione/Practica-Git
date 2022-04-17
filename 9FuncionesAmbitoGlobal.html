@@ -1,0 +1,38 @@
+<script>
+    //Ambito Global
+    /*
+    Variables globales: Variables que se pueden usar en cualquier lugar del programa
+    porque está defnida en el programa principal
+    */
+    var miVariableGlobal=5;//Podemos acceder a esta variable dentro del programa principal y tambien dentro de una funcion
+    console.log(miVariableGlobal);
+
+    function miFuncion(){
+        console.log(miVariableGlobal);
+    }
+
+    miFuncion();
+    console.log(miVariableGlobal);
+
+    //Ambito Local
+    //Variables que definimos dentro de una funcion y que solo se pueden utilizar dentro de esa funcion
+
+    function miFuncion2(){
+        var miVariableLocal=2;
+        console.log(miVariableLocal);
+    }
+
+    miFuncion2();
+    //console.log(miVariableLocal);//Error
+
+    //Ámbito Global vs. Ámbito Local
+    var miNombre="Nora";
+
+    function mostrarMiNombre(){
+        var miNombre="Gino";
+        console.log(miNombre);
+    }
+    mostrarMiNombre();//Gino
+    console.log(miNombre);//Nora
+
+</script>

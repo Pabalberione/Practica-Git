@@ -1,0 +1,18 @@
+<script>
+    function esMenorQue(a,b){
+        return a<b;/* Esta es una forma de simplificar
+                      un poco el codigo sin hacer if, el codigo
+                      retorna true si la sentencia es verdadera*/
+    }
+    console.log(esMenorQue(6,5));
+
+    //Patron de retorno anticipado
+    function calcularRaizCuadrada(num){
+        if(num<0){
+            return undefined;
+        }
+        return Math.sqrt(num);
+    }
+
+    console.log(calcularRaizCuadrada(-3));
+</script>

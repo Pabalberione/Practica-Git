@@ -1,0 +1,21 @@
+<script>
+    class Libro{
+        constructor(autor){
+            this._autor=autor;//Se protege la variable agregando un guion bajo, solo avisa a otros desarrolladores.
+        }
+
+        get autor(){//Permite obtener el valor de la propiedad declarada
+            return this._autor;
+        }
+
+        set autor(nuevoAutor){
+            this._autor=nuevoAutor;
+        }
+    }
+
+    const libro=new Libro("Anonimo");
+    console.log(libro.autor);
+
+    libro.autor="Gino Smith";
+    console.log(libro.autor);
+</script>
